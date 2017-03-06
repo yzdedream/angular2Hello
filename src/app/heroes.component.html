@@ -1,0 +1,28 @@
+<h2>My Heroes</h2>
+<ul class="heroes">
+  <li *ngFor="let hero of heroes"
+      [class.selected]="hero === selectedHero"
+      (click)="onSelect(hero)">
+    <span class="badge">{{hero.id}}</span> {{hero.name}}
+  </li>
+</ul>
+
+<div *ngIf="selectedHero"
+     style="vertical-align: middle">
+  <h2>
+    {{selectedHero.name | uppercase}} is my hero
+  </h2>
+  <a>
+    {{selectedHero.name}} has
+  </a>
+  <a *ngIf="selectedHero.weapon == 'none'">
+    no weapon
+  </a>
+  <a *ngIf="selectedHero.weapon!= 'none'">
+    a {{selectedHero.weapon}}
+  </a>
+
+</div>
+<button *ngIf="selectedHero"
+        (click)="gotoDetail()">View Details
+</button>
