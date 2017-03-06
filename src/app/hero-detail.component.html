@@ -7,5 +7,11 @@
     <label>name: </label>
     <input [(ngModel)]="hero.name" placeholder="name"/>
   </div>
+  <div>
+    <label>weapon: </label>
+    <select [(ngModel)]="hero.weapon" placeholder="weapon">
+      <option *ngFor="let weapon of weapons">{{weapon}}</option>
+    </select>
+  </div>
   <button (click)="goBack()">Back</button>
 </div>

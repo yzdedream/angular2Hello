@@ -26,14 +26,14 @@ export class HeroService {
 
 
 const HEROES: Hero[] = [
-  {id: 11, name: 'Mr. Nice'},
-  {id: 12, name: 'Narco'},
-  {id: 13, name: 'Bombasto'},
-  {id: 14, name: 'Celeritas'},
-  {id: 15, name: 'Magneta'},
-  {id: 16, name: 'RubberMan'},
-  {id: 17, name: 'Dynama'},
-  {id: 18, name: 'Dr IQ'},
-  {id: 19, name: 'Magma'},
-  {id: 20, name: 'Tornado'}
+  {id: 11, name: 'Mr. Nice', weapon: 'none'},
+  {id: 12, name: 'Narco', weapon: 'none'},
+  {id: 13, name: 'Bombasto', weapon: 'none'},
+  {id: 14, name: 'Celeritas', weapon: 'none'},
+  {id: 15, name: 'Magneta', weapon: 'none'},
+  {id: 16, name: 'RubberMan', weapon: 'none'},
+  {id: 17, name: 'Dynama', weapon: 'none'},
+  {id: 18, name: 'Dr IQ', weapon: 'none'},
+  {id: 19, name: 'Magma', weapon: 'none'},
+  {id: 20, name: 'Tornado', weapon: 'none'}
 ];
